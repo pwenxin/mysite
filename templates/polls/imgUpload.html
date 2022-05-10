@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片上传</title>
+    {% load static %}
+</head>
+<body>
+
+<div id="qrcode"></div>
+
+
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="img" multiple="">
+    <input type="submit" value="上传">
+</form>
+
+
+</body>
+    <script type="text/javascript" src="{% static 'qrcode.min.js' %}"></script>
+
+    <script type="text/javascript">
+        new QRCode(document.getElementById("qrcode"), "123");
+    </script>
+</html>

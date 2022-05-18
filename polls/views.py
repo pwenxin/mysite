@@ -15,3 +15,8 @@ def uploadImg(request):
             print(img)
 
     return render(request, 'polls/imgUpload.html')
+
+
+def load(request):
+
+    return render(request, 'polls/live_w_locator.html')

@@ -22,6 +22,7 @@ from polls import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'uploadImg/', views.uploadImg, name='uploadImg'),
+    path(r'load/', views.load, name='load'),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

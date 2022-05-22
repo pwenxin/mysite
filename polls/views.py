@@ -19,4 +19,4 @@ def uploadImg(request):
 
 def load(request):
 
-    return render(request, 'polls/live_w_locator.html')
+    return render(request, 'polls/live_locator.html')
